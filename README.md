@@ -1,5 +1,7 @@
 # Feathers hooks validator
 
+[![Coverage Status](https://coveralls.io/repos/github/NortonPerson/feathers-hooks-validator/badge.svg?branch=config-coveralls)](https://coveralls.io/github/NortonPerson/feathers-hooks-validator?branch=config-coveralls)
+
 > This repo modules for the feathersjs framework
 
 ## Quick start
