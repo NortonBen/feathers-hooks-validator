@@ -1,6 +1,6 @@
 {
   "name": "feathers-hooks-validator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "types": [
@@ -37,5 +37,13 @@
     "eslint": "^4.4.1",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NortonPerson/feathers-hooks-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NortonPerson/feathers-hooks-validator/issues"
+  },
+  "homepage": "https://github.com/NortonPerson/feathers-hooks-validator#readme"
 }
