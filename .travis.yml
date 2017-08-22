@@ -1,11 +1,9 @@
 language: node_js
 node_js:
-  - "iojs"
-  - "6"
-cache:
-  directories:
-    - "node_modules"
+- node
+- 7.0.0
+sudo: false
 install:
-  npm install
+- npm install
 script:
-  - npm run coverage
+- npm run coverage

@@ -1,6 +1,5 @@
 import hook from '../src/hook';
 import chai from 'chai';
-import feathersErrors from 'feathers-errors';
 
 chai.should();
 
@@ -41,8 +40,7 @@ const hooks= {
 describe('validator-hooks', () => {
   it('validator hooks true', (done) => {
     const _hook = hook(option1);
-    const __hook = _hook();
-    __hook(hooks).then((rs) => {
+    _hook(hooks).then((rs) => {
       rs.should.be.eql(hooks);
       done();
     }).catch(e => {
@@ -51,7 +49,7 @@ describe('validator-hooks', () => {
   });
 
   it('validator hooks fail', (done) => {
-    const _hook = hook(option2)();
+    const _hook = hook(option2);
     _hook(hooks)
       .then(() => { throw 'errors '; })
       .catch(()=> {
@@ -60,7 +58,7 @@ describe('validator-hooks', () => {
   });
 
   it('validator hooks 2 true', (done) => {
-    const _hook = hook(option3)();
+    const _hook = hook(option3);
     _hook(hooks).then((rs) => {
       rs.should.be.eql(hooks);
       done();
@@ -71,7 +69,7 @@ describe('validator-hooks', () => {
 
 
   it('validator hooks 3 true', (done) => {
-    const _hook = hook(option3)();
+    const _hook = hook(option3);
     _hook(hooks1).then((rs) => {
       rs.should.be.eql(hooks1);
       done();
