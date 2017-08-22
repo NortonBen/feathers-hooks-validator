@@ -3,7 +3,7 @@ import feathersErrors from 'feathers-errors';
 
 export default function(options){
 
-  return async (hook) => {
+  return (hook) => {
     let data = {};
     if (hook.data) {
       data = Object.assign(data, hook.data);
@@ -13,12 +13,11 @@ export default function(options){
       data = Object.assign(data, hook.params.query);
     }
 
-    try {
-      await indicative.validate(data, options.rules, options.messages);
-    } catch(errors){
-      throw new feathersErrors.BadRequest('Invalid data', { errors });
-    }
-    return hook;
+    return new Promise(function(resolve, reject) {
+      indicative.validate(data, options.rules, options.messages)
+        .then(()=> { resolve(hook); })
+        .catch((errors) => { reject( new feathersErrors.BadRequest('Invalid data', { errors })); });
+    });
   };
 
 }
