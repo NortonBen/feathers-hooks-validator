@@ -13,6 +13,7 @@
     "watch": "babel --watch -d lib/ src/",
     "mocha": "mocha --opts mocha.opts",
     "compile": "babel -d lib/ src/",
+    "coverage:ci": "istanbul cover ./node_modules/mocha/bin/_mocha -- --opts mocha.opts && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --opts mocha.opts",
     "test": "npm run mocha"
   },
