@@ -1,7 +1,8 @@
 # Feathers hooks validator
 
+[![Build Status](https://travis-ci.org/NortonPerson/feathers-hooks-validator.svg?branch=master)](https://travis-ci.org/NortonPerson/feathers-hooks-validator)
 [![Coverage Status](https://coveralls.io/repos/github/NortonPerson/feathers-hooks-validator/badge.svg?branch=config-coveralls)](https://coveralls.io/github/NortonPerson/feathers-hooks-validator?branch=config-coveralls)
-
+[![Code Climate](https://codeclimate.com/github/NortonPerson/feathers-hooks-validator/badges/gpa.svg)](https://codeclimate.com/github/NortonPerson/feathers-hooks-validator)
 > This repo modules for the feathersjs framework
 
 ## Quick start
