@@ -9,8 +9,15 @@
   "keywords": [
     "feathers-plugin",
     "feathers",
+    "feathersjs",
     "validator",
-    "feathers-validator"
+    "validate",
+    "feathers-validator",
+    "feathers-validate",
+    "feathers-hooks-validator",
+    "feathers-hooks-validate",
+    "feathers-hook-validate",
+    "feathers-validate-hook"
   ],
   "scripts": {
     "prepublish": "npm run compile",
