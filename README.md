@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/NortonPerson/feathers-hooks-validator.png?label=ready&title=Ready)](https://waffle.io/NortonPerson/feathers-hooks-validator?utm_source=badge)
 # Feathers hooks validator
 
 [![Build Status](https://travis-ci.org/NortonPerson/feathers-hooks-validator.svg?branch=master)](https://travis-ci.org/NortonPerson/feathers-hooks-validator)
