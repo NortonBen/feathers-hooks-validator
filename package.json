@@ -1,6 +1,6 @@
 {
   "name": "feathers-hooks-validator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This modules for the feathersjs framework.",
   "main": "lib/index.js",
   "types": [
