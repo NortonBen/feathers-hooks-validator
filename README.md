@@ -64,7 +64,7 @@ module.exports = function(){
 
 ## Documentation
 
-User package [`indicative`](https://github.com/poppinss/indicative) validator data
+Use package [`indicative`](https://github.com/poppinss/indicative) validator data
 
 ### Structure validator
 
