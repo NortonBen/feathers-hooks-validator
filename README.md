@@ -85,7 +85,7 @@ User package [`indicative`](https://github.com/poppinss/indicative) validator da
     ]
 ```
 - `methods`: the methods using with check rule
-- `useQuery`: user query in `url` when check rule
+- `useQuery`: uses data on query in `url` when check rule
 - `rules`: rule was defined in package [`indicative`](https://github.com/poppinss/indicative)
 - `messages`: custom message instead of a self-constructed message in package [`indicative`](https://github.com/poppinss/indicative)
 
