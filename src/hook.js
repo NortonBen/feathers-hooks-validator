@@ -1,5 +1,5 @@
 import indicative from 'indicative';
-import feathersErrors from 'feathers-errors';
+import feathersErrors from '@feathersjs/errors';
 
 export default function(options){
 
@@ -14,7 +14,7 @@ export default function(options){
     }
 
     return new Promise(function(resolve, reject) {
-      indicative.validate(data, options.rules, options.messages)
+      indicative.validateAll(data, options.rules, options.messages)
         .then(()=> { resolve(hook); })
         .catch((errors) => { reject( new feathersErrors.BadRequest('Invalid data', { errors })); });
     });
